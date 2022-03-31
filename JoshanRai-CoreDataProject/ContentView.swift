@@ -12,8 +12,11 @@ struct Student: Hashable {
 }
 
 struct ContentView: View {
-    let students = [Student(name: "Harry Potter"), Student(name: "Hermione Granger")]
-    @State private var dead = false
+    //   Conditional saving of NSManagedObjectContext
+    @Environment(\.managedObjectContext) var moc
+    
+    //   Why does \.self work for ForEach?
+    //let students = [Student(name: "Harry Potter"), Student(name: "Hermione Granger")]
     
     var body: some View {
         //   Why does \.self work for ForEach?
@@ -23,9 +26,17 @@ struct ContentView: View {
                 Text("\($0) is even")
             }
         }
-         */
+        
         List(students, id: \.self) { student in
             Text(student.name)
+        }
+         */
+        
+        //   Conditional saving of NSManagedObjectContext
+        Button("Save") {
+            if moc.hasChanges {
+                try? moc.save()
+            }
         }
     }
 }
