@@ -13,6 +13,8 @@
 		3F9D037527F509720082BB17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D037427F509720082BB17 /* Preview Assets.xcassets */; };
 		3F9D037C27F509BA0082BB17 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D037B27F509BA0082BB17 /* DataController.swift */; };
 		3F9D038027F509F40082BB17 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D037E27F509F40082BB17 /* CoreDataProject.xcdatamodeld */; };
+		3F9D038727F550B50082BB17 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D038527F550B50082BB17 /* Movie+CoreDataClass.swift */; };
+		3F9D038827F550B50082BB17 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D038627F550B50082BB17 /* Movie+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		3F9D037427F509720082BB17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F9D037B27F509BA0082BB17 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3F9D037F27F509F40082BB17 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		3F9D038527F550B50082BB17 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F9D038627F550B50082BB17 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				3F9D036D27F509700082BB17 /* JoshanRai_CoreDataProjectApp.swift */,
+				3F9D038527F550B50082BB17 /* Movie+CoreDataClass.swift */,
+				3F9D038627F550B50082BB17 /* Movie+CoreDataProperties.swift */,
 				3F9D037D27F509CD0082BB17 /* Model */,
 				3F9D036F27F509700082BB17 /* ContentView.swift */,
 				3F9D037127F509720082BB17 /* Assets.xcassets */,
@@ -154,6 +160,8 @@
 				3F9D037027F509700082BB17 /* ContentView.swift in Sources */,
 				3F9D037C27F509BA0082BB17 /* DataController.swift in Sources */,
 				3F9D038027F509F40082BB17 /* CoreDataProject.xcdatamodeld in Sources */,
+				3F9D038727F550B50082BB17 /* Movie+CoreDataClass.swift in Sources */,
+				3F9D038827F550B50082BB17 /* Movie+CoreDataProperties.swift in Sources */,
 				3F9D036E27F509700082BB17 /* JoshanRai_CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +303,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-CoreDataProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -324,7 +332,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-CoreDataProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

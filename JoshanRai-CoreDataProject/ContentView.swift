@@ -13,6 +13,7 @@ struct Student: Hashable {
 
 struct ContentView: View {
     let students = [Student(name: "Harry Potter"), Student(name: "Hermione Granger")]
+    @State private var dead = false
     
     var body: some View {
         //   Why does \.self work for ForEach?
