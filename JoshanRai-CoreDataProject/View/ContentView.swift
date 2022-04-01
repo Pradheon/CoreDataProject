@@ -64,8 +64,16 @@ struct ContentView: View {
      */
     
     //   One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
+    /*
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var countires: FetchedResults<Country>
+     */
+    
+    //   Core Data: Wrap Up
+    //  Filtered Generic List
+    @Environment(\.managedObjectContext) var moc
+    @State private var lastNameFilter = "A"
+    private var sortBy = [NSSortDescriptor(key: "lastName", ascending: true)]
     
     var body: some View {
         //   Why does \.self work for ForEach?
@@ -175,6 +183,7 @@ struct ContentView: View {
         */
         
         //   One-to-many relationships with Core Data, SwiftUI, and @FetchRequest
+        /*
         VStack {
             List(countires, id: \.self) { country in
                 Section(country.wrappedFullName) {
@@ -210,6 +219,45 @@ struct ContentView: View {
                 candy4.origin?.fullName = "Swizerland"
                 
                 try? moc.save()
+            }
+        }
+        */
+        
+        //   Core Data: Wrap Up
+        //  Filtered Generic List
+        VStack {
+            FilteredGenericList(predicate: .beginsWith, filterValue: lastNameFilter, filterKey: "lastName", sortDescriptors: sortBy) { (singer: Singer) in
+                Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+            }
+            
+            Button {
+                let taylor = Singer(context: moc)
+                taylor.firstName = "Taylor"
+                taylor.lastName = "Swift"
+                
+                let ed = Singer(context: moc)
+                ed.firstName = "Ed"
+                ed.lastName = "Sheeran"
+                
+                let adele = Singer(context: moc)
+                adele.firstName = "Adele"
+                adele.lastName = "Adkins"
+                
+                try? moc.save()
+            } label: {
+                Label("Add", systemImage: "plus.circle.fill")
+            }
+            
+            Button {
+                lastNameFilter = "A"
+            } label: {
+                Label("Show A", systemImage: "a.circle")
+            }
+            
+            Button {
+                lastNameFilter = "S"
+            } label: {
+                Label("Show S", systemImage: "s.circle")
             }
         }
     }

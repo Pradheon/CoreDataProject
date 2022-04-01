@@ -22,6 +22,7 @@
 		3F9D039B27F7795E0082BB17 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D039727F7795E0082BB17 /* Country+CoreDataProperties.swift */; };
 		3F9D039C27F7795E0082BB17 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D039827F7795E0082BB17 /* Candy+CoreDataClass.swift */; };
 		3F9D039D27F7795E0082BB17 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D039927F7795E0082BB17 /* Candy+CoreDataProperties.swift */; };
+		3F9D039F27F77C600082BB17 /* FilteredGenericList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D039E27F77C600082BB17 /* FilteredGenericList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		3F9D039727F7795E0082BB17 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F9D039827F7795E0082BB17 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3F9D039927F7795E0082BB17 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F9D039E27F77C600082BB17 /* FilteredGenericList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredGenericList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				3F9D036F27F509700082BB17 /* ContentView.swift */,
 				3F9D038F27F75E9C0082BB17 /* FilteredList.swift */,
+				3F9D039E27F77C600082BB17 /* FilteredGenericList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				3F9D039D27F7795E0082BB17 /* Candy+CoreDataProperties.swift in Sources */,
 				3F9D038727F550B50082BB17 /* Movie+CoreDataClass.swift in Sources */,
 				3F9D039B27F7795E0082BB17 /* Country+CoreDataProperties.swift in Sources */,
+				3F9D039F27F77C600082BB17 /* FilteredGenericList.swift in Sources */,
 				3F9D038E27F75CD40082BB17 /* Singer+CoreDataProperties.swift in Sources */,
 				3F9D038827F550B50082BB17 /* Movie+CoreDataProperties.swift in Sources */,
 				3F9D039A27F7795E0082BB17 /* Country+CoreDataClass.swift in Sources */,
@@ -347,7 +351,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-CoreDataProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -376,7 +380,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-CoreDataProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
