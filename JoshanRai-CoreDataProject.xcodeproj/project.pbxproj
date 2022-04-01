@@ -15,6 +15,9 @@
 		3F9D038027F509F40082BB17 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D037E27F509F40082BB17 /* CoreDataProject.xcdatamodeld */; };
 		3F9D038727F550B50082BB17 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D038527F550B50082BB17 /* Movie+CoreDataClass.swift */; };
 		3F9D038827F550B50082BB17 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D038627F550B50082BB17 /* Movie+CoreDataProperties.swift */; };
+		3F9D038D27F75CD40082BB17 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D038B27F75CD40082BB17 /* Singer+CoreDataClass.swift */; };
+		3F9D038E27F75CD40082BB17 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D038C27F75CD40082BB17 /* Singer+CoreDataProperties.swift */; };
+		3F9D039027F75E9C0082BB17 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D038F27F75E9C0082BB17 /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		3F9D037F27F509F40082BB17 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		3F9D038527F550B50082BB17 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3F9D038627F550B50082BB17 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F9D038B27F75CD40082BB17 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F9D038C27F75CD40082BB17 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F9D038F27F75E9C0082BB17 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				3F9D036D27F509700082BB17 /* JoshanRai_CoreDataProjectApp.swift */,
-				3F9D038527F550B50082BB17 /* Movie+CoreDataClass.swift */,
-				3F9D038627F550B50082BB17 /* Movie+CoreDataProperties.swift */,
+				3F9D038927F5598A0082BB17 /* NSManagedObject */,
 				3F9D037D27F509CD0082BB17 /* Model */,
-				3F9D036F27F509700082BB17 /* ContentView.swift */,
+				3F9D038A27F5599C0082BB17 /* View */,
 				3F9D037127F509720082BB17 /* Assets.xcassets */,
 				3F9D037327F509720082BB17 /* Preview Content */,
 			);
@@ -85,6 +90,26 @@
 				3F9D037E27F509F40082BB17 /* CoreDataProject.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3F9D038927F5598A0082BB17 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				3F9D038527F550B50082BB17 /* Movie+CoreDataClass.swift */,
+				3F9D038627F550B50082BB17 /* Movie+CoreDataProperties.swift */,
+				3F9D038B27F75CD40082BB17 /* Singer+CoreDataClass.swift */,
+				3F9D038C27F75CD40082BB17 /* Singer+CoreDataProperties.swift */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
+		3F9D038A27F5599C0082BB17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9D036F27F509700082BB17 /* ContentView.swift */,
+				3F9D038F27F75E9C0082BB17 /* FilteredList.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9D038D27F75CD40082BB17 /* Singer+CoreDataClass.swift in Sources */,
 				3F9D037027F509700082BB17 /* ContentView.swift in Sources */,
+				3F9D039027F75E9C0082BB17 /* FilteredList.swift in Sources */,
 				3F9D037C27F509BA0082BB17 /* DataController.swift in Sources */,
 				3F9D038027F509F40082BB17 /* CoreDataProject.xcdatamodeld in Sources */,
 				3F9D038727F550B50082BB17 /* Movie+CoreDataClass.swift in Sources */,
+				3F9D038E27F75CD40082BB17 /* Singer+CoreDataProperties.swift in Sources */,
 				3F9D038827F550B50082BB17 /* Movie+CoreDataProperties.swift in Sources */,
 				3F9D036E27F509700082BB17 /* JoshanRai_CoreDataProjectApp.swift in Sources */,
 			);
@@ -303,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-CoreDataProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -332,7 +360,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-CoreDataProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
